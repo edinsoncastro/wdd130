@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el nav */
+nav {
+    background-color: darkblue;
+    color: white; /* Corregido 'wjite' */
+    padding: 20px; /* Se unificó con el padding inicial */
+    display: block; /* Corregido 'blok' */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el título principal */
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes */
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    display: block;
+    margin: 10px auto; /* Centra la imagen */
+}
+
+/* Estilos para párrafos */
+p {
+    padding: 10px;
+    text-align: justify; /* Mejora la lectura */
+}
+
+/* Estilos para el aside */
+aside {
+    width: 20em;
+    margin: 1em auto; /* Centra el aside */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Corregido 'rgba(0, 0, 0, 2)' */
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img { 
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos para el footer */
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    background-color: darkblue;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    aside {
+        width: auto;
+        margin: 1em;
+    }
+}
+
+
