@@ -1,0 +1,261 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    background-color: #F4F4EB; /* secondary-color */
+    color: #333333; /* main text color */
+    line-height: 1.6;
+}
+
+/* Container for center alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #007BFF; /* primary-color */
+}
+
+.logo {
+    width: 150px;
+    margin-right: 40px;
+}
+
+h1 {
+    font-family: 'Optima', sans-serif;
+    color: rgb(28, 27, 27);
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Distribuye los enlaces a lo largo del espacio disponible */
+    align-items: center; /* Centra verticalmente los enlaces */
+    width: 100%; /* Asegura que la barra de navegación ocupe el 100% del ancho */
+    padding: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FFD700; /* accent1-color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: rgb(247, 247, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido vertical y horizontalmente */
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    font-family: 'Optima', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(43, 42, 42, 0.5);
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-info, .history {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.about-info .container, .history .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info article {
+    display: flex;
+    flex-direction: row-reverse; /* Invertir la dirección para poner la imagen a la derecha */
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.client-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.about-info p {
+    text-align: left;
+}
+
+.about-info h2, .history h2 {
+    font-size: 2.5em;
+    color: #007BFF; /* primary-color */
+    margin-bottom: 15px;
+}
+
+.about-info p, .history p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+}
+
+/* History Section */
+.history {
+    background-color: #FFD700; /* accent1-color */
+    padding: 60px 0;
+}
+
+.history h2 {
+    font-size: 2.5em;
+    color: #007BFF; /* primary-color */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.history-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Añade espacio entre la imagen y los textos */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-text {
+    width: 45%; /* Las columnas ocupan el 45% del ancho cada una */
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.history-image {
+    width: 300px; /* Ancho de la imagen */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .history-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-text {
+        width: 100%;
+    }
+
+    .history-image {
+        width: 80%; /* Asegura que la imagen se ajuste al tamaño de la pantalla */
+        margin: 20px 0;
+    }
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 60px 0;
+    background-color: #F7F9FE; /* accent2-color */
+    text-align: center;
+}
+
+.adventure h2 {
+    font-size: 2.5em;
+    color: #007BFF; /* primary-color */
+    margin-bottom: 20px;
+}
+
+.rafting-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333333; /* main text color */
+}
+
+/* Footer */
+footer {
+    background-color: #333333; /* main text color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .rafting-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .rafting-images {
+        grid-template-columns: 1fr;
+    }
+}
